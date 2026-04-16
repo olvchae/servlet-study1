@@ -46,7 +46,7 @@
           balance: inputs[3].value,
         }
         fetch("http://localhost:8080/servlet_study_war_exploded/api/accounts", {  //js에서 객체 표현 { 안에 넣어서 가능~}
-          method: "post",   //객체ㅔㅔ
+          method: "post",   //객체ㅔㅔ + CRUD 표현을 함
           body: JSON.stringify(accountObj),
           headers: {
             "Content-Type": "application/json",
