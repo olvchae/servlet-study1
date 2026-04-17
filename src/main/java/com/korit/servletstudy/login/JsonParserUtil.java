@@ -23,11 +23,11 @@ public class JsonParserUtil {
     public static Map<String, Object> parse(String json) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(json, Map.class);
-
     }
 
-    public static String stringify(Object obj) throws JsonProcessingException{
+    public static String stringify(Object obj) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(obj);
     }
+
 }
