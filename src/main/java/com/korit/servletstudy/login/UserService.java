@@ -1,9 +1,15 @@
 package com.korit.servletstudy.login;
 
+import lombok.RequiredArgsConstructor;
+
 import java.util.List;
 
+@RequiredArgsConstructor
 public class UserService {
-    public List<User> getAll() {
 
+    private final UserRepository userRepository;
+
+    public List<User> getAll() {
+        return userRepository.findByAll();
     }
 }

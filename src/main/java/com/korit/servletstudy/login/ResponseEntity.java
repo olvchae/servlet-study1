@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.util.Map;
 
 @Data
-@AllArgsConstructor
 @Builder
+@AllArgsConstructor
 public class ResponseEntity <T>{
     private int status;
     private T body;
